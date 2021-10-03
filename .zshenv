@@ -5,6 +5,8 @@
 
 export FIFO_UEBERZUG="$HOME/a.txt"
 export TERMINAL="/usr/bin/alacritty"
+export DRACULA_THEME="$HOME/themes/dracula"
+export ZSH_CUSTOM="$HOME/.config/zsh"
 export TERM="alacritty"
 export TERM_CMD="--command"
 
