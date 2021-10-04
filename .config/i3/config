@@ -16,6 +16,8 @@ exec --no-startup-id xsettingsd &
 exec --no-startup-id picom -b
 exec --no-startup-id copyq --start-server
 
+exec --no-startup-id export QT_QPA_PLATFORMTHEME="qt5ct"
+
 #exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=secrets
 
 # Restore GNOME's settings

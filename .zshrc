@@ -129,3 +129,4 @@ alias lf='lfcd'
 bindkey  "^[[H"   beginning-of-line
 bindkey  "^[[F"   end-of-line
 export EDITOR=vim
+export QT_QPA_PLATFORMTHEME=qt5ct
