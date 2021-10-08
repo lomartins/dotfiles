@@ -9,6 +9,9 @@ export DRACULA_THEME="$HOME/themes/dracula"
 export ZSH_CUSTOM="$HOME/.config/zsh"
 export TERM="alacritty"
 export TERM_CMD="--command"
+export XDG_CONFIG_HOME="$HOME/.config"
+export EDITOR=nvim
+export QT_QPA_PLATFORMTHEME=qt5ct
 
 export LF_ICONS="\
 tw=:\
