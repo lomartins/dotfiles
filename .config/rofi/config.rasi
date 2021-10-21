@@ -37,9 +37,9 @@ configuration {
     width: 800;
     background-color: @background;
     border:           1;
-    border-radius: 6;
+    border-radius: 8;
     border-color: @bordercolor;
-    padding:          7;
+    padding:          10;
 }
 #mainbox {
     border:  0;
