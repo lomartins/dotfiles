@@ -42,7 +42,11 @@ bindsym $super+Tab exec "rofi -modi drun,run,filebrowser,window -lines 12 -paddi
 bindsym $alt+grave exec "rofi -modi window,run,filebrowser,drun -lines 12 -padding 18 -width 40 -location 0 -show window -sidebar-mode"
 bindsym $super+semicolon exec "rofi -show emoji"
 bindsym $alt+Tab workspace back_and_forth
+
 bindsym Control+Shift+period exec dunstctl action
+bindsym Control+space exec dunstctl close
+bindsym Control+Shift+space exec dunstctl close-all
+bindsym Control+Shift+grave exec dunstctl history-pop
 
 # common apps keybinds
 # bindsym Shift+Print exec scrot 'Cheese_%a-%d%b%y_%H.%M.png' -e 'viewnior ~/$f'
