@@ -1,0 +1,85 @@
+@import url("./colors.css");
+* {
+    border: none;
+    border-radius: 0;
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 11pt;
+    min-height: 0;
+}
+window#waybar {
+    opacity: 0.9;
+    background: @background-darker;
+    color: @foreground;
+    border-bottom: 2px solid @background;
+}
+
+#workspaces {
+    background: @background;
+    color: @foreground;
+    border-radius: 0 0 10px 10px;
+    padding: 0 0px;
+}
+
+#workspaces button {
+    font-weight: bold;
+    padding: 0 10px;
+    background: @background;
+    color: @foreground;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+    opacity: 0.5;
+}
+#workspaces button:hover {
+    box-shadow: inherit;
+    text-shadow: inherit;
+    background: linear-gradient(45deg, @selection, @background-darker);
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+#workspaces button.active {
+    background: linear-gradient(45deg, @purple, @selection);
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+    opacity: 1.0;
+    min-width: 30px;
+}
+#workspaces button.urgent {
+    background-image: linear-gradient(0deg, @red, @background-darker);
+}
+#submap {
+    background-color: @pink;
+    color: @background-darker;
+    font-weight: bold;
+    padding: 0 15px;
+    border-radius: 10px 24px 10px 24px;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#submap.active {
+    background-color: @purple;
+    color: @background-darker;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+#taskbar button.active {
+    background-image: linear-gradient(0deg, @selection, @background-darker);
+}
+#clock {
+    padding: 0 4px;
+    background: @background;
+}
+
+#custom-hypr-submap {
+    background-color: @pink;
+    color: @background-darker;
+    font-weight: bold;
+    padding: 0 0px;
+    border-radius: 10px 24px 10px 24px;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+    opacity: 0;
+}
+
+#custom-hypr-submap.enabled {
+    background-color: @pink;
+    color: @background-darker;
+    padding: 0 15px;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+    min-width: 30px;
+    opacity: 1.0;
+}

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ ! -s "/tmp/hypr-submap" ]; then
+    touch /tmp/hypr-submap-cache
+    submapCache=$(cat /tmp/hypr-submap-cache)
+    printf "{\"text\": \"$submapCache\"}"
+else
+    submapText=$(cat /tmp/hypr-submap)
+    echo $submapText > /tmp/hypr-submap-cache
+    printf "{\"text\": \"$submapText\", \"class\": \"enabled\"}"
+fi
